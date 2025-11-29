@@ -15,7 +15,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #4a5568;
-            background-image: url('https://i.pinimg.com/1200x/20/5a/09/205a091f1207bdc9cbe8b087bbc99f7f.jpg');
+            background-image: url('https://i.pinimg.com/736x/c4/b9/c2/c4b9c2b45cbf9e9db0dcd2045124bbe1.jpg');
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
@@ -34,7 +34,7 @@
         }
 
         header {
-            background-image: url('https://i.pinimg.com/736x/67/55/4e/67554e1b9240c40d7fdb677684cf7833.jpg');
+            background-image: url('https://i.pinimg.com/736x/dc/22/ca/dc22ca4e9fb5e6bf7ced912f4ec11875.jpg');
             background-size: cover;
             background-position: center;
             padding: 0;
@@ -307,6 +307,85 @@
             min-height: 100px;
         }
 
+        .animal-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(90, 123, 166, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .animal-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(90, 123, 166, 0.15);
+        }
+
+        .animal-image {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(135deg, #f8d7e6 0%, #d4e5f5 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: rgba(90, 123, 166, 0.3);
+        }
+
+        .animal-info {
+            padding: 1.5rem;
+        }
+
+        .animal-name {
+            font-size: 1.5rem;
+            color: #5a7ba6;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .animal-details {
+            color: #6b7e9f;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .animal-details-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+
+        .detail-label {
+            font-weight: 600;
+            color: #5a7ba6;
+        }
+
+        .animal-description {
+            color: #6b7e9f;
+            line-height: 1.6;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 2px solid #f0f4f8;
+        }
+
+        .category-header {
+            background: linear-gradient(135deg, #f8d7e6 0%, #d4e5f5 100%);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin: 3rem 0 2rem;
+            text-align: center;
+        }
+
+        .category-header h3 {
+            font-size: 2rem;
+            color: #5a7ba6;
+            margin: 0;
+        }
+
+        .category-icon {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
         @media (max-width: 768px) {
             .logo-container h1 {
                 font-size: 2rem;
@@ -329,7 +408,7 @@
 <body>
     <header>
         <div class="logo-container">
-            <img src="images/logo.png" alt="Shelter Animals For You Logo" class="logo-img">
+            <img src="logo.png" alt="Shelter Animals For You Logo" class="logo-img">
             <h1>Shelter Animals For You</h1>
             <p class="tagline">Where community comes together to save lives and create forever homes</p>
         </div>
@@ -339,6 +418,7 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#adopt">Adopt</a></li>
+            <li><a href="#animals">Available Animals</a></li>
             <li><a href="#foster">Foster</a></li>
             <li><a href="#volunteer">Volunteer</a></li>
             <li><a href="#donate">Donate</a></li>
@@ -393,9 +473,256 @@
         <div class="container">
             <h2>Ready to Adopt?</h2>
             <p>Start your journey to finding your new best friend today. Our adoption process is simple and supportive.</p>
-            <a href="#" class="btn">View Available Animals</a>
+            <a href="#animals" class="btn">View Available Animals</a>
         </div>
     </div>
+
+    <section id="animals">
+        <div class="container">
+            <h2>Meet Our Available Animals</h2>
+            <p class="section-intro">These wonderful animals are waiting for their forever homes. Each one has been vet-checked, spayed/neutered, and is ready to join your family!</p>
+            
+            <!-- CATS SECTION -->
+            <div class="category-header">
+                <div class="category-icon">🐱</div>
+                <h3>Available Cats</h3>
+            </div>
+            
+            <div class="cards">
+                <div class="animal-card">
+                    <div class="animal-image">📷</div>
+                    <div class="animal-info">
+                        <h3 class="animal-name">Luna</h3>
+                        <div class="animal-details">
+                            <div class="animal-details-row">
+                                <span class="detail-label">Age:</span>
+                                <span>2 years</span>
+                            </div>
+                            <div class="animal-details-row">
+                                <span class="detail-label">Gender:</span>
+                                <span>Female</span>
+                            </div>
+                            <div class="animal-details-row">
+                                <span class="detail-label">Breed:</span>
+                                <span>Domestic Shorthair</span>
+                            </div>
+                        </div>
+                        <div class="animal-description">
+                            Sweet and gentle Luna loves cuddles and sunny windowsills. She's great with children and would make a perfect family pet.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="animal-card">
+                    <div class="animal-image">📷</div>
+                    <div class="animal-info">
+                        <h3 class="animal-name">Oliver</h3>
+                        <div class="animal-details">
+                            <div class="animal-details-row">
+                                <span class="detail-label">Age:</span>
+                                <span>4 years</span>
+                            </div>
+                            <div class="animal-details-row">
+                                <span class="detail-label">Gender:</span>
+                                <span>Male</span>
+                            </div>
+                            <div class="animal-details-row">
+                                <span class="detail-label">Breed:</span>
+                                <span>Tabby</span>
+                            </div>
+                        </div>
+                        <div class="animal-description">
+                            Oliver is a laid-back gentleman who enjoys quiet afternoons and gentle playtime. He'd do best in a calm, adult-only home.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="animal-card">
+                    <div class="animal-image">📷</div>
+                    <div class="animal-info">
+                        <h3 class="animal-name">Mittens</h3>
+                        <div class="animal-details">
+                            <div class="animal-details-row">
+                                <span class="detail-label">Age:</span>
+                                <span>6 months</span>
+                            </div>
+                            <div class="animal-details-row">
+                                <span class="detail-label">Gender:</span>
+                                <span>Female</span>
+                            </div>
+                            <div class="animal-details-row">
+                                <span class="detail-label">Breed:</span>
+                                <span>Tuxedo</span>
+                            </div>
+                        </div>
+                        <div class="animal-description">
+                            Playful and curious, Mittens is a kitten with endless energy and love to give. She's looking for an active home!
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DOGS SECTION -->
+            <div class="category-header">
+                <div class="category-icon">🐶</div>
+                <h3>Available Dogs</h3>
+            </div>
+            
+            <div class="cards">
+                <div class="animal-card">
+                    <div class="animal-image">📷</div>
+                    <div class="animal-info">
+                        <h3 class="animal-name">Max</h3>
+                        <div class="animal-details">
+                            <div class="animal-details-row">
+                                <span class="detail-label">Age:</span>
+                                <span>3 years</span>
+                            </div>
+                            <div class="animal-details-row">
+                                <span class="detail-label">Gender:</span>
+                                <span>Male</span>
+                            </div>
+                            <div class="animal-details-row">
+                                <span class="detail-label">Breed:</span>
+                                <span>Labrador Mix</span>
+                            </div>
+                        </div>
+                        <div class="animal-description">
+                            Max is an energetic and loyal companion who loves outdoor adventures. He's great with kids and knows basic commands!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="animal-card">
+                    <div class="animal-image">📷</div>
+                    <div class="animal-info">
+                        <h3 class="animal-name">Daisy</h3>
+                        <div class="animal-details">
+                            <div class="animal-details-row">
+                                <span class="detail-label">Age:</span>
+                                <span>5 years</span>
+                            </div>
+                            <div class="animal-details-row">
+                                <span class="detail-label">Gender:</span>
+                                <span>Female</span>
+                            </div>
+                            <div class="animal-details-row">
+                                <span class="detail-label">Breed:</span>
+                                <span>Beagle</span>
+                            </div>
+                        </div>
+                        <div class="animal-description">
+                            Sweet Daisy is a gentle soul who loves leisurely walks and cozy naps. She's perfect for a quieter household.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="animal-card">
+                    <div class="animal-image">📷</div>
+                    <div class="animal-info">
+                        <h3 class="animal-name">Rocky</h3>
+                        <div class="animal-details">
+                            <div class="animal-details-row">
+                                <span class="detail-label">Age:</span>
+                                <span>1 year</span>
+                            </div>
+                            <div class="animal-details-row">
+                                <span class="detail-label">Gender:</span>
+                                <span>Male</span>
+                            </div>
+                            <div class="animal-details-row">
+                                <span class="detail-label">Breed:</span>
+                                <span>Terrier Mix</span>
+                            </div>
+                        </div>
+                        <div class="animal-description">
+                            Rocky is a playful pup who's always ready for fun! He'd thrive in an active home with a yard to explore.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RABBITS SECTION -->
+            <div class="category-header">
+                <div class="category-icon">🐰</div>
+                <h3>Available Rabbits</h3>
+            </div>
+            
+            <div class="cards">
+                <div class="animal-card">
+                    <div class="animal-image">📷</div>
+                    <div class="animal-info">
+                        <h3 class="animal-name">Thumper</h3>
+                        <div class="animal-details">
+                            <div class="animal-details-row">
+                                <span class="detail-label">Age:</span>
+                                <span>1 year</span>
+                            </div>
+                            <div class="animal-details-row">
+                                <span class="detail-label">Gender:</span>
+                                <span>Male</span>
+                            </div>
+                            <div class="animal-details-row">
+                                <span class="detail-label">Breed:</span>
+                                <span>Dutch Rabbit</span>
+                            </div>
+                        </div>
+                        <div class="animal-description">
+                            Thumper is a friendly bunny who loves to hop around and munch on fresh veggies. He's great with gentle handling!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="animal-card">
+                    <div class="animal-image">📷</div>
+                    <div class="animal-info">
+                        <h3 class="animal-name">Snowball</h3>
+                        <div class="animal-details">
+                            <div class="animal-details-row">
+                                <span class="detail-label">Age:</span>
+                                <span>2 years</span>
+                            </div>
+                            <div class="animal-details-row">
+                                <span class="detail-label">Gender:</span>
+                                <span>Female</span>
+                            </div>
+                            <div class="animal-details-row">
+                                <span class="detail-label">Breed:</span>
+                                <span>Lionhead Rabbit</span>
+                            </div>
+                        </div>
+                        <div class="animal-description">
+                            Sweet Snowball has the fluffiest fur and the gentlest personality. She loves being petted and would make a wonderful companion.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="animal-card">
+                    <div class="animal-image">📷</div>
+                    <div class="animal-info">
+                        <h3 class="animal-name">Cinnamon</h3>
+                        <div class="animal-details">
+                            <div class="animal-details-row">
+                                <span class="detail-label">Age:</span>
+                                <span>6 months</span>
+                            </div>
+                            <div class="animal-details-row">
+                                <span class="detail-label">Gender:</span>
+                                <span>Female</span>
+                            </div>
+                            <div class="animal-details-row">
+                                <span class="detail-label">Breed:</span>
+                                <span>Mini Rex</span>
+                            </div>
+                        </div>
+                        <div class="animal-description">
+                            Cinnamon is a curious young bunny who's always exploring. She's looking for a patient family to show her the world!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="foster">
         <div class="container">
@@ -509,17 +836,16 @@
         <div class="container">
             <h2>Make a Difference Today</h2>
             <p>Your support changes lives. Help us continue our mission of rescuing, caring for, and finding homes for animals in need.</p>
-            <a href="#" class="btn">Donate Now ^*^ </a>
+            <a href="#" class="btn">Donate Now ^.^ </a>
         </div>
-        
     </div>
 
     <footer>
         <div class="container">
             <p><strong>Shelter Animals For You</strong></p>
             <p>Community-based animal rescue and adoption</p>
-            <p style="margin-top: 1rem;">email@gmail.com |  (555) ANIMALS</p>
-            <p style="margin-top: 1rem; font-size: 0.9rem;">2025 Shelter Animals For You..</p>
+            <p style="margin-top: 1rem;"> email@gmail.com | (555) ANIMALS</p>
+            <p style="margin-top: 1rem; font-size: 0.9rem;"> 2025 Shelter Animals For You. </p>
         </div>
     </footer>
 </body>
